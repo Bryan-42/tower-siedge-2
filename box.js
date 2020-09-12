@@ -30,5 +30,8 @@ class Box{
            pop();
            World.remove(world,this.body);
         }
+        if(this.image = "3C2A20.jpeg"){
+            score++;
+        }        
     }
 }

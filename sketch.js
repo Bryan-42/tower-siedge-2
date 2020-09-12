@@ -7,6 +7,7 @@ const Constraint = Matter.Constraint;
 
 var player,ground,ground2,ground3,box1,box2,box3,box4,box5,box6,box7,box8,box9,box10,box11,box12,box13;
 var box14,box15,box15,box16,box17,box18,box19,box20,box21,box22,box23,box24,box25;
+var score;
 
 function preload(){
 	
@@ -60,8 +61,7 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(60,42,42);
-
-  player.display();
+  
   place.display();
   
   box1.display();
@@ -94,6 +94,9 @@ function draw() {
   ground2.display();
   ground3.display();
 
+  player.display();
+
+  text("Score: "+score,10,20)
 }
 
 function mouseDragged(){
