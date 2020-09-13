@@ -13,6 +13,8 @@ class Box{
         this.image = loadImage("3C2A20.jpeg");;
         World.add(world,this.body);
     }
+    score(){
+    }
     display(){
         if (this.body.speed < 4){
             var pos = this.body.position;
@@ -29,9 +31,9 @@ class Box{
            image(this.image, this.body.position.x, this.body.position.y, 30, 40);
            pop();
            World.remove(world,this.body);
-        }
-        if(this.image = "3C2A20.jpeg"){
+        }   
+        if(this.body.speed > 4){
             score++;
-        }        
+        }     
     }
-}
+} 
